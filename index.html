@@ -12,6 +12,40 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no" />
+    <style>
+.tipsBj {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 4;
+    display: none;
+}
+
+    .tipsBj img {
+        width: 35rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+@media screen and (max-width:320px) {
+
+
+    .tipsBj img {
+        width: 25rem;
+        right: 0rem;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:400px) {
+    .tipsBj img {
+        width: 29rem;
+        right: .5rem;
+    }
+}
+
+    </style>
 </head>
 
 
@@ -40,6 +74,8 @@
 			<td align="center" height="50"><font size="6"><a href="https://github.com/flowerLeafYH/WSCWXC/raw/master/WSCW.apk">Android安卓下载</a></font></td>
 		</tr>
    </table>
-
+<div class="tipsBj">
+	<img src=""/>
+</div>
 </body>
 </html>
