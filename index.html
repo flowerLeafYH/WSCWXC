@@ -75,7 +75,18 @@
 		</tr>
    </table>
 <div class="tipsBj">
-	<img src=""/>
+	<img src="https://github.com/flowerLeafYH/WSCWXC/raw/master/tips.png"/>
 </div>
+<script>
+var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+var tips = document.querySelector(".tipsBj")
+if (ua.match(/MicroMessenger/i) == "micromessenger") {
+	//在微信中打开
+	tips.style.display = "block";
+	tips.addEventListener("click", function () {
+		this.style.display="none";
+	}, false)
+}
+</script
 </body>
 </html>
